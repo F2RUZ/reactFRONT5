@@ -1,0 +1,211 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.App {
+  margin: 0px auto;
+
+  width: 100%;
+  min-height: 100vh;
+}
+.wrapper {
+  margin: 100px auto;
+  width: 80%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    width: 236px;
+    height: 26px;
+    flex-shrink: 0;
+  }
+  &__list {
+    display: flex;
+    gap: 50px;
+  }
+  &__link {
+    color: #83888f;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px; /* 125% */
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+    &:hover {
+      fill: #fff;
+      stroke-width: 1px;
+      stroke: #000;
+      filter: drop-shadow(0px 1px 2px #000);
+    }
+  }
+}
+
+.intro {
+  margin-top: 100px;
+  border-radius: 10px;
+  background-image: url(./img/Bitmap.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 86px;
+
+  &__title {
+    width: 500px;
+    color: #fefcf7;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 72px; /* 100% */
+  }
+  &__text {
+    width: 445px;
+    color: #fefcf7;
+    font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    margin: 60px 0;
+  }
+  &__btn {
+    width: 217px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #66d2cf;
+    border: none;
+    color: #fefcf7;
+    text-align: center;
+    font-family: Fraunces 9pt;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px; /* 138.889% */
+  }
+}
+
+.cards {
+  background-image: url(./img/bgimage.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top top;
+  height: 500px;
+
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__img {
+    width: 400px;
+    flex-shrink: 0;
+  }
+
+  &__card {
+    margin-top: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    color: #333d4b;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px; /* 133.333% */
+  }
+  &__text {
+    width: 255px;
+    color: #333d4b;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+  }
+}
+
+.choose {
+  margin-top: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 600px;
+  background-color: #2e2c2c;
+  opacity: 0.9;
+  border-radius: 15px;
+  &__titlee {
+    margin-top: 80px;
+    color: #fefcf7;
+    text-align: center;
+    font-family: Fraunces 9pt;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px; /* 120% */
+  }
+  &__texts {
+    margin-top: 50px;
+    width: 540px;
+    color: #fefcf7;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+  }
+  &__cards {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: space-evenly;
+  }
+  &__card {
+    padding: 50px;
+    position: relative;
+    z-index: 2;
+    bottom: -200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 23%;
+    height: 382px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #0e8784;
+  }
+  &__title {
+    color: #fefcf7;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px; /* 133.333% */
+  }
+  &__text {
+    color: #fefcf7;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+  }
+}
