@@ -4,6 +4,7 @@ import "./App.scss";
 import Intro from "./components/Intro";
 import Cards from "./components/Cards";
 import Choose from "./components/Choose";
+import Footer from "./components/Footer";
 
 export default class App extends Component {
   render() {
@@ -14,6 +15,7 @@ export default class App extends Component {
           <Intro />
           <Cards />
           <Choose />
+          <Footer />
         </div>
       </div>
     );
